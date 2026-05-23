@@ -78,8 +78,11 @@ export function Navbar() {
     closeTimer.current = setTimeout(() => setOpenMenu(null), 120);
   };
 
+  const matchesPath = (target: string) =>
+    path === target || (target !== "/" && path.startsWith(`${target}/`));
+
   const isChildActive = (item: NavItem) =>
-    item.children?.some((c) => c.to === path) ?? false;
+    item.children?.some((c) => matchesPath(c.to)) ?? false;
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 py-4">
@@ -134,7 +137,7 @@ export function Navbar() {
                     <div className="absolute left-0 top-full pt-3 w-80 z-50">
                       <div className="bg-popover text-popover-foreground shadow-card rounded-2xl p-3 border border-border animate-fade-in">
                         {item.children.map((c) => {
-                          const childActive = path === c.to;
+                          const childActive = matchesPath(c.to);
                           return (
                             <Link
                               key={c.to}

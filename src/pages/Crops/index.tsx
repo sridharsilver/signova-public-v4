@@ -4,6 +4,7 @@ import { Leaf } from "lucide-react";
 import { PageHero } from "@/components/common/PageShell";
 import { crops } from "@/data/crops";
 import { usePageMeta } from "@/hooks/use-page-meta";
+import leaves from "@/assets/images/leaves.jpg";
 
 export default function CropsPage() {
   usePageMeta({
@@ -17,6 +18,7 @@ export default function CropsPage() {
         eyebrow="Crop Solutions"
         title="Tailored science for every crop"
         subtitle="Stage-wise nutrition programmes designed by agronomists and tested across Indian agro-climatic zones."
+        image={leaves}
       />
 
       <section className="py-20">

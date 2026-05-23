@@ -84,6 +84,7 @@ export default function NutrientManagementPage() {
         eyebrow="Nutrient Management"
         title={`${crop.name} Nutrient Management`}
         subtitle="Identify nutrient deficiencies in the field and apply the right Signova solution at the right stage."
+        image={crop.image}
       />
 
       <section className="border-b border-border bg-background/95 supports-[backdrop-filter]:bg-background/80 backdrop-blur-md sticky top-20 z-30 shadow-sm">

@@ -191,6 +191,7 @@ export default function ProductsPage() {
         eyebrow="Products & Services"
         title="A complete crop nutrition portfolio"
         subtitle="300+ products across micronutrients, bio-stimulants, nano-tech, protectors and organic solutions."
+        image={products}
       />
 
       <section className="py-16">

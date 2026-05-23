@@ -1,19 +1,17 @@
-import { lazy } from "react";
 import type { RouteObject } from "react-router-dom";
 import MainLayout from "@/app/layouts/MainLayout";
 import AdminLayout from "@/app/layouts/AdminLayout";
-
-const HomePage = lazy(() => import("@/pages/Home"));
-const AboutPage = lazy(() => import("@/pages/About"));
-const ProductsPage = lazy(() => import("@/pages/Products"));
-const KnowledgePage = lazy(() => import("@/pages/Knowledge"));
-const KnowledgeDetailsPage = lazy(() => import("@/pages/Knowledge/KnowledgeDetails"));
-const CareersPage = lazy(() => import("@/pages/Careers"));
-const ContactPage = lazy(() => import("@/pages/Contact"));
-const DistributorPage = lazy(() => import("@/pages/Distributor"));
-const InnovationPage = lazy(() => import("@/pages/Innovation"));
-const CropsPage = lazy(() => import("@/pages/Crops"));
-const NutrientManagementPage = lazy(() => import("@/pages/Crops/NutrientManagement"));
+import HomePage from "@/pages/Home/index";
+import AboutPage from "@/pages/About/index";
+import ProductsPage from "@/pages/Products/index";
+import KnowledgePage from "@/pages/Knowledge/index";
+import KnowledgeDetailsPage from "@/pages/Knowledge/KnowledgeDetails";
+import CareersPage from "@/pages/Careers/index";
+import ContactPage from "@/pages/Contact/index";
+import DistributorPage from "@/pages/Distributor/index";
+import InnovationPage from "@/pages/Innovation/index";
+import CropsPage from "@/pages/Crops/index";
+import NutrientManagementPage from "@/pages/Crops/NutrientManagement";
 
 function NotFoundPage() {
   return (

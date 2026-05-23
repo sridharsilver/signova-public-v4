@@ -105,6 +105,7 @@ const slides = [
       { text: "Inside our R&D", path: "/innovation", isPrimary: false, icon: PlayCircle }
     ]
   }
+  
 ];
 
 const textContainerVariants = {

@@ -3,6 +3,7 @@ import { Clock } from "lucide-react";
 import { PageHero } from "@/components/common/PageShell";
 import { usePageMeta } from "@/hooks/use-page-meta";
 import { articles } from "./KnowledgeDetails";
+import leaves from "@/assets/images/leaves.jpg";
 
 export default function KnowledgePage() {
   usePageMeta({
@@ -16,6 +17,7 @@ export default function KnowledgePage() {
         eyebrow="Knowledge Centre"
         title="Practical agronomy, lab-grade science"
         subtitle="Field guides, deficiency manuals and crop research curated by Signova experts."
+        image={leaves}
       />
 
       <section className="py-20">

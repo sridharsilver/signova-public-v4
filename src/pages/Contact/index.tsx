@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/common/PageShell";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { usePageMeta } from "@/hooks/use-page-meta";
+import heroFarm from "@/assets/images/hero-farm.jpg";
 
 function Contact() {
   usePageMeta({
@@ -13,6 +14,7 @@ function Contact() {
         eyebrow="Contact"
         title="Let's grow something together"
         subtitle="Reach our team for product info, agronomy advice or partnership opportunities."
+        image={heroFarm}
       />
 
       <section className="py-20">

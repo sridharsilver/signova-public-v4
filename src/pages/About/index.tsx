@@ -64,6 +64,7 @@ function About() {
         eyebrow="About Us"
         title="Two decades of growing India's harvests"
         subtitle="From a single product to 300+ science-backed crop solutions trusted across India."
+        image={lab}
       />
 
       <section className="py-28">

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
 @import "tailwindcss" source(none);
 @source "..";
 @import "tw-animate-css";
@@ -19,6 +20,8 @@
 }
 
 @layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-sans { font-family: var(--font-sans); }
   .glass {
     background: color-mix(in oklab, var(--background) 60%, transparent);
     backdrop-filter: blur(16px) saturate(140%);

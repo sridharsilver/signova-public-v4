@@ -22,6 +22,7 @@ function Innovation() {
         eyebrow="R&D & Innovation"
         title="Where soil science meets molecular chemistry"
         subtitle="A 30-scientist research centre engineering tomorrow's crop solutions today."
+        image={lab}
       />
 
       <section className="py-20">

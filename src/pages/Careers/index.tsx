@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/common/PageShell";
 import { Briefcase, MapPin, ArrowRight } from "lucide-react";
 import { usePageMeta } from "@/hooks/use-page-meta";
+import farmer from "@/assets/images/farmer.jpg";
 
 const roles = [
   { t: "Senior R&D Scientist", l: "Hyderabad", d: "Lead chelation chemistry projects and patent filings.", type: "Full-time" },
@@ -22,6 +23,7 @@ function Careers() {
         eyebrow="Careers"
         title="Build the future of Indian agriculture"
         subtitle="Join 250+ scientists, agronomists and operators transforming how India grows."
+        image={farmer}
       />
 
       <section className="py-20">

@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/common/PageShell";
 import { TrendingUp, Users, Megaphone, GraduationCap, Check } from "lucide-react";
 import { usePageMeta } from "@/hooks/use-page-meta";
+import products from "@/assets/images/products.jpg";
 
 const benefits = [
   { i: TrendingUp, t: "High Margins", d: "Industry-leading distributor margins with seasonal incentives." },
@@ -20,6 +21,7 @@ function Dist() {
         eyebrow="Partner Programme"
         title="Grow your business with India's premium agri-brand"
         subtitle="Join 3,000+ partners earning more with Signova's high-margin, high-trust portfolio."
+        image={products}
       />
 
       <section className="py-20">
